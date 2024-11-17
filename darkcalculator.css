@@ -1,0 +1,104 @@
+body {
+    background: linear-gradient(45deg, #000000b2,rgb(234, 234, 234), #000000b2);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  #calculator {
+    background-color: #000000;
+    border-radius: 15px;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: pulse infinite 3s ;
+  }
+  #calculator:hover{
+    animation-play-state: paused;
+  }
+  #display {
+    color:#ffffff;
+    width: 100%;
+    padding: 15px;
+    font-size: 2.5rem;
+    text-align: right;
+    border: none;
+    background-color:rgba(234, 234, 234, 0.13);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    right: 3.5%;
+  }
+  #Cbut{
+    background-color: #630132;
+    color: #a58f9a;
+  }
+  #Cbut:hover{
+    background-color: #630132e1;
+  }
+  #Cbut:active{
+    background-color: #630132e1;
+  }
+  #keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(234, 234, 234);
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgb(244, 244, 244);
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.05);
+  }
+  
+  .operator-button {
+    background-color:rgba(234, 234, 234, 0.13);
+    color:rgb(255, 255, 255) ;
+  }
+  
+  .operator-button:hover {
+    background-color: #ffffff91;
+    transform: scale(1.05);
+  }
+  
+  .operator-button:active {
+    background-color: rgba(233, 233, 233, 0.747);
+    transform: scale(1.05);
+  }
+  #modebut{
+    width: 8%;
+    position: relative;
+    left: 29.5%;
+    bottom: 42%;
+  }
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.03);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
